@@ -44,7 +44,7 @@
     							echo "User";
     							break;
     					}; ?>
-    					<td><a href="edit.php">Edit</a></td>;
+    					<td><a href="edit.php?id=<?php echo $row["id"];?>">Edit</a></td>;
     					<td><a href="delete.php?id=<?php echo $row["id"];?>">Delete</a></td>;
     				</tr>
 		<?php   }

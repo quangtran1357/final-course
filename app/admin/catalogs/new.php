@@ -14,31 +14,15 @@
         <i class="flash"><?php if(isset($_SESSION["flash"])) echo $_SESSION["flash"]; ?></i>
       </div>
       <div>
-        <h1>Tao moi nguoi dung</h1>
+        <h1>Tao moi chuyen muc</h1>
       </div>
       <div class="row">
-        <label>Ten nguoi dung:</label>
+        <label>Ten Chuyen Muc:</label>
         <input class="form-control" type="text" name="name">
       </div>
       <div class="row">
-        <label>Email:</label>
-        <input class="form-control"  type="email" name="email">
-      </div>
-      <div class="row">
-        <label>Mat khau:</label>
-        <input class="form-control"  type="password" name="password">
-      </div>
-      <div class="row">
-        <label>Lap lai mat khau:</label>
-        <input class="form-control"  type="password" name="repassword">
-      </div>
-      <div class="row">
-        <label>Quyen:</label>
-        <select class="form-control" name="role">
-          <option value="2">User</option>
-          <option value="1">Editor</option>
-          <option value="0">Admin</option>
-        </select>
+        <label>Mo ta:</label>
+        <textarea class="form-control" name="description"></textarea>
       </div>
       <br>
       <div class="row">

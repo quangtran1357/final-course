@@ -3,7 +3,7 @@
 <?php
 	if (isset($_GET["id"])) {
 		$id= $_GET["id"];
-		$sql = "delete from users where id = $id";
+		$sql = "delete from catalogs where id = $id";
 		$result = $conn->query($sql);
 		if ($result) {
 			$SESSION["flash"] = "delete succes";

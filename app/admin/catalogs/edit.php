@@ -7,12 +7,11 @@
   }
 
   $id = $_GET["id"];
-  $sql = "select * from users where id='$id'";
+  $sql = "select * from catalogs where id='$id'";
   $result = $conn->query($sql);
   $row = $result->fetch_assoc();
   $name = $row["name"];
-  $email = $row["email"];
-  $role = $row["role"];
+  $description = $row["description"];
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,24 +35,8 @@
         <input class="form-control" type="text" name="name" value="<?php echo $name; ?>">
       </div>
       <div class="row">
-        <label>Email:</label>
-        <input class="form-control"  type="email" name="email" value="<?php echo $email; ?>">
-      </div>
-      <div class="row">
-        <label>Mat khau:</label>
-        <input class="form-control"  type="password" name="password">
-      </div>
-      <div class="row">
-        <label>Lap lai mat khau:</label>
-        <input class="form-control"  type="password" name="repassword">
-      </div>
-      <div class="row">
-        <label>Quyen:</label>
-        <select class="form-control" name="role">
-          <option <?php if($role ==  2) echo "selected='true'"; ?> value="2">User</option>
-          <option <?php if($role ==  1) echo "selected='true'"; ?> value="1">Editor</option>
-          <option <?php if($role ==  0) echo "selected='true'"; ?> value="0">Admin</option>
-        </select>
+        <label>description:</label>
+        <textarea class="form-control" name="description" value="<?php echo $description; ?>"></textarea>
       </div>
       <br>
       <div class="row">
