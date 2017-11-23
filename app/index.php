@@ -21,6 +21,7 @@
         <?php include "slide-left.php" ?>
         <!-- /.col-lg-3 -->
         <div class="col-lg-9">
+          <?php include "slide.php"?>
           <div class="row">
             <?php
                 $sql = "select * from products";
@@ -35,7 +36,7 @@
                         <h4 class="card-title">
                           <a href="#"><?php echo $row["name"];?></a>
                         </h4>
-                        <h5>$24.99</h5>
+                        <h5><?php echo $row["price"];?></h5>
                         <p class="card-text"><?php echo $row["description"];?>.</p>
                       </div>
                       <div class="card-footer">
