@@ -29,10 +29,12 @@
                     <img class="card-img-top img-fluid" style="width: 300px; height: 400px" src="<?php echo URL_IMAGE.$row['image'];?>" alt="">
                     <div class="card-body">
                       <h3 class="card-title"><?php echo $row["name"]; ?></h3>
-                      <h4><?php echo $row["price"]; ?></h4>
+                      <h4><?php echo $row["price"]; ?> VNĐ</h4>
                       <p class="card-text"><?php echo $row["description"];?></p>
                       <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
                       4.0 stars
+                      <br>
+                      <a href="#" style="width: 26%;text-align: center;background: #1a58b4;border-radius: 5px;color: #fff;font-size: 13px;text-transform: uppercase;font-weight: 700;padding: 11px 0;float: left;"><img src="../public/uploads/ord.png" style="padding-right: 10px">ho vào giỏ hàng</a>
                   </div>
                 </div>
                 <!-- /.card -->

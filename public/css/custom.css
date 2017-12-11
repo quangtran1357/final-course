@@ -6,3 +6,8 @@
 .flash{
 	color: red;
 }
+.header{
+  padding: 0px;
+  margin: 0px;
+  width: 800px;
+}
